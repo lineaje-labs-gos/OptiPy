@@ -11,13 +11,19 @@ classifiers = [
 with open('./requirements.txt', "r", encoding='utf-16') as f:
   required_packages = f.read().splitlines()
 
-setup(
+setup(project_urls={
+    'Homepage': 'https://github.com/lineaje-labs-gos/OptiPy',
+    'Repository': 'https://github.com/lineaje-labs-gos/OptiPy',
+    'Tracker': 'https://github.com/lineaje-labs-gos/OptiPy/issues',
+  }, 
+  maintainer_email="221268890+Lineaje-DepFixer@users.noreply.github.com", 
+  maintainer="Lineaje DepFixer", 
   name='optipy',
-  version='2.0.2',
+  version="2.0.2+lineaje.1",
   description='Web Scraping API for getting Optifine VersionsList/Versions/Download-URL.',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type='text/markdown',
-  url='https://github.com/GoodDay360/OptiPy',  
+  url="https://github.com/lineaje-labs-gos/OptiPy",  
   author='GoodDay360',
   author_email='istartgame31@gmail.com',
   license='MIT', 
